@@ -9,6 +9,13 @@ const TodoItem = ({
 }) => {
   const [editing, setEditing] = useState(false);
 
+  const completedStyle = {
+    fontStyle: 'italic',
+    color: '#595959',
+    opacity: 0.4,
+    textDecoration: 'line-through',
+  };
+
   const handleChange = (id) => {
     setTodos((prevState) => prevState.map((todo) => {
       if (todo.id === id) {
@@ -47,7 +54,9 @@ const TodoItem = ({
           checked={itemProp.completed}
           onChange={() => { handleChange(itemProp.id); }}
         />
-        {itemProp.title}
+        <span style={itemProp.completed ? completedStyle : null}>
+          {itemProp.title}
+        </span>
       </div>
       <div
         className={styles.buttons}
