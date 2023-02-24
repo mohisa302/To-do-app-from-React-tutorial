@@ -1,0 +1,58 @@
+.todos .container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.todos-content {
+  max-width: 580px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  border-radius: 10rem;
+  box-shadow: 0 4px 14px 0 rgba(70, 70, 70, 0.38);
+  justify-content: space-between;
+  background: #fff;
+  font-size: 1rem;
+}
+
+.input-text {
+  width: 85%;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  border-radius: 10rem;
+  font-size: 1rem;
+}
+
+.input-text::placeholder {
+  color: #000;
+}
+
+.input-submit {
+  margin-right: 1rem;
+  background: transparent;
+  color: #5b5b5b;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.input-text,
+.input-submit {
+  height: 45px;
+  outline: none;
+  border: none;
+}
+
+.submit-warning {
+  font-size: 13px;
+  color: red;
+  margin-top: 5px;
+  display: block;
+}

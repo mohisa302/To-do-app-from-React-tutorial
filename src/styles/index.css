@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.4;
+  color: #000;
+  background: #fff;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 85em;
+  margin: auto;
+}
+
+.container-pall {
+  padding: 1rem;
+}
+
+.container-px {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
